@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build, Simulate, and View (Current Verilog File)",
+        "type": "shell",
+        "command": "cmd",
+        "args": [
+          "/c",
+          "iverilog -o sim.out ${file} testbench.v && vvp sim.out && gtkwave wave.vcd"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Compiles and simulates the current Verilog file with the testbench and opens waveform in GTKWave"
+      }
+    ]
+  }
+  
