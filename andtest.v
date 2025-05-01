@@ -13,6 +13,8 @@ module andtest;
 
     // Test stimulus
     initial begin
+        $dumpfile("andtest.vcd");     // Name of the VCD file to generate
+        $dumpvars(0, andtest);        // Dump all variables in the module 'andtest'
         // Monitor the inputs and output with meaningful labels
         $monitor("input_a = %b, input_b = %b, output_y = %b", input_a, input_b, output_y);
 
