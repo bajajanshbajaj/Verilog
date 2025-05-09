@@ -1,0 +1,46 @@
+[
+ {
+  "InstFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/video_top.v",
+  "InstLine" : 24,
+  "InstName" : "video_top",
+  "ModuleFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/video_top.v",
+  "ModuleLine" : 24,
+  "ModuleName" : "video_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/video_top.v",
+    "InstLine" : 75,
+    "InstName" : "testpattern_inst",
+    "ModuleFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/testpattern.v",
+    "ModuleLine" : 17,
+    "ModuleName" : "testpattern"
+   },
+   {
+    "InstFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/video_top.v",
+    "InstLine" : 116,
+    "InstName" : "u_tmds_rpll",
+    "ModuleFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/gowin_rpll/TMDS_rPLL.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "TMDS_rPLL"
+   },
+   {
+    "InstFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/video_top.v",
+    "InstLine" : 133,
+    "InstName" : "DVI_TX_Top_inst",
+    "ModuleFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/dvi_tx/dvi_tx.v",
+    "ModuleLine" : 1034,
+    "ModuleName" : "DVI_TX_Top",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/dvi_tx/dvi_tx.v",
+      "InstLine" : 1065,
+      "InstName" : "rgb2dvi_inst",
+      "ModuleFile" : "D:/Tang nano 20k/TangNano-20K-example/hdmi/src/dvi_tx/dvi_tx.v",
+      "ModuleLine" : 2,
+      "ModuleName" : "~rgb2dvi.DVI_TX_Top"
+     }
+    ]
+   }
+  ]
+ }
+]

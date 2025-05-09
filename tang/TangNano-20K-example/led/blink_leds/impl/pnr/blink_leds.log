@@ -1,0 +1,12 @@
+Reading netlist file: "D:\Tang nano 20k\TangNano-20K-example\led\blink_leds\impl\gwsynthesis\blink_leds.vg"
+Parsing netlist file "D:\Tang nano 20k\TangNano-20K-example\led\blink_leds\impl\gwsynthesis\blink_leds.vg" completed
+Processing netlist completed
+Reading constraint file: "D:\Tang nano 20k\TangNano-20K-example\led\blink_leds\src\blink_leds.cst"
+ERROR  (CT1136) : Bank 6 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'leds_5_obuf' : IO_TYPE = LVCMOS18 in the same bank
+ERROR  (CT1136) : Bank 6 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'leds_4_obuf' : IO_TYPE = LVCMOS18 in the same bank
+ERROR  (CT1136) : Bank 6 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'leds_3_obuf' : IO_TYPE = LVCMOS18 in the same bank
+ERROR  (CT1136) : Bank 6 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'leds_2_obuf' : IO_TYPE = LVCMOS18 in the same bank
+ERROR  (CT1136) : Bank 6 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'leds_1_obuf' : IO_TYPE = LVCMOS18 in the same bank
+ERROR  (CT1136) : Bank 6 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'leds_0_obuf' : IO_TYPE = LVCMOS18 in the same bank
+ERROR  (CT1136) : Bank 7 vccio(3.3) is locked by other constraint or embedded port, conflicting BANK_VCCIO set by 'clk_ibuf' : IO_TYPE = LVCMOS18 in the same bank
+Physical Constraint parsed completed with errors
