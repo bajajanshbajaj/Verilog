@@ -1,9 +1,9 @@
 GowinSynthesis start
 Running parser ...
 Analyzing Verilog file 'D:\Verilog\tang\serial test\src\top.v'
-Compiling module 'top_module'("D:\Verilog\tang\serial test\src\top.v":1)
-WARN  (EX3780) : Using initial value of 'data' since it is never assigned("D:\Verilog\tang\serial test\src\top.v":35)
-WARN  (EX3780) : Using initial value of 'ena' since it is never assigned("D:\Verilog\tang\serial test\src\top.v":36)
+Compiling module 'top_module'("D:\Verilog\tang\serial test\src\top.v":9)
+WARN  (EX3791) : Expression size 13 truncated to fit in target size 12("D:\Verilog\tang\serial test\src\top.v":39)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 4("D:\Verilog\tang\serial test\src\top.v":59)
 NOTE  (EX0101) : Current top module is "top_module"
 [5%] Running netlist conversion ...
 Running device independent optimization ...
