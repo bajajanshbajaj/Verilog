@@ -1,0 +1,10 @@
+[
+ {
+  "InstFile" : "D:/Verilog/tang/serial test/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top_module",
+  "ModuleFile" : "D:/Verilog/tang/serial test/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top_module"
+ }
+]
