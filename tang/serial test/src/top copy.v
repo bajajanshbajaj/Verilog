@@ -9,8 +9,17 @@ module x (
     localparam BAUD_DIV = 1406;  
     reg clk2 = 0 ;
     reg [10:0] counter = 11'b0;
-    reg [15:0] uartcount;
-    reg x = 0;
+    
+
+    reg [7:0] data = 8'b0;
+    reg ena = 1'b1;
+
+    wire [9:0] datafull ;
+    reg [3:0] countToTen = 4'b0;
+
+    assign datafull= {1'b0 , data, 1'b1};
+
+
 
     always @(posedge clk)begin
         if(counter == BAUD_DIV -1)begin
@@ -27,25 +36,29 @@ module x (
 
 
     always @(posedge clk2)begin
-        if (uartcount > 16'd8)begin
-            out <= 1'b1;
-            if (uartcount == 16'd20000)
-                uartcount <= 0;
+
+        if (ena) begin
+            out <= datafull[countToTen];
+            if (countToTen == 4'd9)begin
+                countToTen <= 4'b0;
+            end
+            else begin
+                countToTen <= countToTen +4'b1 ;
+            end
         end
-        else if (uartcount == 0)begin
-            out <= 1'b0;
-            uartcount <= uartcount+1;
-        end
+
         else begin
             out <= 1;
-            
-            uartcount <= uartcount+1;
         end
-        
     end
 
-
-
-
     
+endmodule
+
+module uart_tx (
+    input clk,          
+    output reg out      
+);
+    
+
 endmodule

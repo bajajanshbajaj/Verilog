@@ -1,7 +1,8 @@
 module top_module (
     input clk,          
     output reg out,
-    output reg led
+    output reg led,
+    output reg led2
 );
 
     // Baud rate parameters
