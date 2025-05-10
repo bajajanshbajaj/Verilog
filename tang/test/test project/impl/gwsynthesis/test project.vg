@@ -1,0 +1,33 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11.01 Education (64-bit)"
+//Sat May 10 03:48:16 2025
+
+//Source file index table:
+//file0 "\D:/Verilog/tang/test/test\ project/src/top.v"
+`pragma protect begin_protected
+`pragma protect version="2.3"
+`pragma protect author="default"
+`pragma protect author_info="default"
+`pragma protect encrypt_agent="GOWIN"
+`pragma protect encrypt_agent_info="GOWIN Encrypt Version 2.3"
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=256)
+`pragma protect key_keyowner="GOWIN",key_keyname="GWK2023-09",key_method="rsa"
+`pragma protect key_block
+DPArMebAEfoXZIf00jWO4a2dBZm/cj4IuahLMj0N4UBvmTDwskN8+hcV4nJf96C55AOfBLHKajOl
+WvNjHt8lRw4T5y+mtF56aoRxlIGs/9IGFDmGaa/KbQgGRDsKmo9Uxd+qjQAaISIOs5qPrH+hIlDQ
+cAMEiwCL0dIsREE/VVQ9DCPMmdNHaRqt671iC++j3I8fwTHGvcYkdXyReWmrje+jD3GyKsjepr4y
+EEGHEypVNjC8z4qC/kXifv4aMsJUTk/4jPdMZMNJ1PryXJEqIBD5s433sTypppUU9gVc2+C4C1kI
+3tvBrShEwdUGMsrVT512kJ0MXLnB19f3krFhwQ==
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=208)
+`pragma protect data_keyowner="default-ip-vendor"
+`pragma protect data_keyname="default-ip-key"
+`pragma protect data_method="aes128-cfb"
+`pragma protect data_block
+BEoE6fPXju8uftidwSfxUk2BZg2l7DOeQgtfyra7FnAn9tqAl7pSPtifZeWiL8hq7xMy/sPa3hY8
+m0dXrdmPYNCENKhzMn6J0BlCTjPmcft315PR1+P7NGqiun6vwB9vabC6poln64L4zK7QvY1MLLz5
+k83SbZnJHUwtYjDNz9kTG8gZhiU3U7NuMyEE95QT+WySLiUQLnONQFayOtYEsCMroEJni8mv4qfm
+EVA5YmA1GXeVD3z0g31iIeiUaIGi7CSTBA9c/HkAQDlmOUf6yw==
+`pragma protect end_protected

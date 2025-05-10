@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="Gowin_PicoRV32_Top" Register="20" Lut="127" T_Register="3065(20)" T_Alu="562(0)" T_Lut="4462(127)" T_MULT36X36="1(0)" T_Bsram="32(0)">
+ <SubModule name="core" Register="2056" Alu="374" Lut="3442" T_Register="2325(2056)" T_Alu="438(374)" T_Lut="3796(3442)" T_MULT36X36="1(0)">
+  <SubModule name="pcpi_mul" Register="69" Lut="10" MULT36X36="1" T_Register="69(69)" T_Lut="10(10)" T_MULT36X36="1(1)"/>
+  <SubModule name="pcpi_div" Register="200" Alu="64" Lut="344" T_Register="200(200)" T_Alu="64(64)" T_Lut="344(344)"/>
+ </SubModule>
+ <SubModule name="u_dm" Lut="93" T_Register="587(0)" T_Lut="429(93)">
+  <SubModule name="u_dm_RstSync_2_1" T_Register="20(0)">
+   <SubModule name="reset_n_catch_reg" T_Register="20(0)">
+    <SubModule name="reg_0" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_1" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_2" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_3" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_4" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_5" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_6" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_7" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_8" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_9" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_10" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_11" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_12" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_13" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_14" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_15" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_16" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_17" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_18" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_19" Register="1" T_Register="1(1)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="u_jtag_RstSync_3_1" Lut="1" T_Register="3(0)" T_Lut="1(1)">
+   <SubModule name="reset_n_catch_reg" T_Register="3(0)">
+    <SubModule name="reg_0" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_1" Register="1" T_Register="1(1)"/>
+    <SubModule name="reg_2" Register="1" T_Register="1(1)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="u_s_debug_csr" Lut="33" T_Register="69(0)" T_Lut="34(33)">
+   <SubModule name="dpc_dfflr" Register="31" Lut="1" T_Register="31(31)" T_Lut="1(1)"/>
+   <SubModule name="dscratch_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="dcause_dfflr" Register="3" T_Register="3(3)"/>
+   <SubModule name="halt_dfflr" Register="1" T_Register="1(1)"/>
+   <SubModule name="step_dfflr" Register="1" T_Register="1(1)"/>
+   <SubModule name="ebreakm_dfflr" Register="1" T_Register="1(1)"/>
+  </SubModule>
+  <SubModule name="u_s_jtag_dtm" Register="96" Lut="99" T_Register="181(96)" T_Lut="110(99)">
+   <SubModule name="u_jtag2debug_cdc_tx" Lut="5" T_Register="46(0)" T_Lut="5(5)">
+    <SubModule name="u_o_rdy_sync" T_Register="2(0)">
+     <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1" T_Register="1(1)"/>
+     <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1" T_Register="1(1)"/>
+    </SubModule>
+    <SubModule name="vld_dfflr" Register="1" T_Register="1(1)"/>
+    <SubModule name="dat_dfflr" Register="41" T_Register="41(41)"/>
+    <SubModule name="o_rdy_sync_dffr" Register="1" T_Register="1(1)"/>
+    <SubModule name="buf_nrdy_dfflr" Register="1" T_Register="1(1)"/>
+   </SubModule>
+   <SubModule name="u_jtag2debug_cdc_rx" Lut="6" T_Register="39(0)" T_Lut="6(6)">
+    <SubModule name="u_i_vld_sync" T_Register="2(0)">
+     <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1" T_Register="1(1)"/>
+     <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1" T_Register="1(1)"/>
+    </SubModule>
+    <SubModule name="i_vld_sync_dffr" Register="1" T_Register="1(1)"/>
+    <SubModule name="i_rdy_dfflr" Register="1" T_Register="1(1)"/>
+    <SubModule name="buf_dat_dfflr" Register="34" T_Register="34(34)"/>
+    <SubModule name="buf_vld_dfflr" Register="1" T_Register="1(1)"/>
+   </SubModule>
+  </SubModule>
+  <SubModule name="u_dm2dtm_cdc_tx" Lut="6" T_Register="39(0)" T_Lut="6(6)">
+   <SubModule name="u_o_rdy_sync" T_Register="2(0)">
+    <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1" T_Register="1(1)"/>
+    <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1" T_Register="1(1)"/>
+   </SubModule>
+   <SubModule name="vld_dfflr" Register="1" T_Register="1(1)"/>
+   <SubModule name="dat_dfflr" Register="34" T_Register="34(34)"/>
+   <SubModule name="o_rdy_sync_dffr" Register="1" T_Register="1(1)"/>
+   <SubModule name="buf_nrdy_dfflr" Register="1" T_Register="1(1)"/>
+  </SubModule>
+  <SubModule name="u_dm2dtm_cdc_rx" Lut="4" T_Register="46(0)" T_Lut="4(4)">
+   <SubModule name="u_i_vld_sync" T_Register="2(0)">
+    <SubModule name="sync_gen[0].i_is_0.sync_dffr" Register="1" T_Register="1(1)"/>
+    <SubModule name="sync_gen[1].i_is_not_0.sync_dffr" Register="1" T_Register="1(1)"/>
+   </SubModule>
+   <SubModule name="i_vld_sync_dffr" Register="1" T_Register="1(1)"/>
+   <SubModule name="i_rdy_dfflr" Register="1" T_Register="1(1)"/>
+   <SubModule name="buf_dat_dfflr" Register="41" T_Register="41(41)"/>
+   <SubModule name="buf_vld_dfflr" Register="1" T_Register="1(1)"/>
+  </SubModule>
+  <SubModule name="dm_hartid_dfflr" Register="1" T_Register="1(1)"/>
+  <SubModule name="cleardebint_dfflr" Register="1" T_Register="1(1)"/>
+  <SubModule name="sethaltnot_dfflr" Register="1" T_Register="1(1)"/>
+  <SubModule name="u_s_debug_rom" Lut="42" T_Lut="42(42)"/>
+  <SubModule name="u_s_debug_ram" Lut="139" T_Register="224(0)" T_Lut="139(139)">
+   <SubModule name="debug_ram_gen[0].ram_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="debug_ram_gen[1].ram_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="debug_ram_gen[2].ram_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="debug_ram_gen[3].ram_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="debug_ram_gen[4].ram_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="debug_ram_gen[5].ram_dfflr" Register="32" T_Register="32(32)"/>
+   <SubModule name="debug_ram_gen[6].ram_dfflr" Register="32" T_Register="32(32)"/>
+  </SubModule>
+  <SubModule name="dm_haltnot_dfflr" Register="1" T_Register="1(1)"/>
+  <SubModule name="dm_debint_dfflr" Register="1" T_Register="1(1)"/>
+ </SubModule>
+ <SubModule name="itcm" Register="1" Lut="12" Bsram="16" T_Register="1(1)" T_Lut="12(12)" T_Bsram="16(16)"/>
+ <SubModule name="dtcm" Register="1" Lut="5" Bsram="16" T_Register="1(1)" T_Lut="5(5)" T_Bsram="16(16)"/>
+ <SubModule name="simpleuart" Register="131" Alu="124" Lut="93" T_Register="131(131)" T_Alu="124(124)" T_Lut="93(93)"/>
+</Module>

@@ -1,1 +1,5 @@
-module top
+module top (
+    input clk
+);
+    
+endmodule

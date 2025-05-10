@@ -1,0 +1,19 @@
+Reading netlist file: "D:\Verilog\tang\ip picorv\impl\gwsynthesis\ip picorv.vg"
+Parsing netlist file "D:\Verilog\tang\ip picorv\impl\gwsynthesis\ip picorv.vg" completed
+Processing netlist completed
+Reading constraint file: "D:\Verilog\tang\ip picorv\src\ip picorv.cst"
+Physical Constraint parsed completed
+Running placement......
+ERROR  (PR2028) : The constrained location is useless in current package
+ERROR  (PR2017) : 'jtag_TDO' cannot be placed according to constraint, for the location is a dedicated pin (JTAG)
+ERROR  (PR2028) : The constrained location is useless in current package
+ERROR  (PR2017) : 'jtag_TMS' cannot be placed according to constraint, for the location is a dedicated pin (JTAG)
+ERROR  (PR2028) : The constrained location is useless in current package
+ERROR  (PR2017) : 'jtag_TCK' cannot be placed according to constraint, for the location is a dedicated pin (JTAG)
+ERROR  (PR2028) : The constrained location is useless in current package
+ERROR  (PR2017) : 'jtag_TDI' cannot be placed according to constraint, for the location is a dedicated pin (JTAG)
+Generate file "D:\Verilog\tang\ip picorv\impl\pnr\ip picorv.pin.html" completed
+Generate file "D:\Verilog\tang\ip picorv\impl\pnr\ip picorv.rpt.html" completed
+Generate file "D:\Verilog\tang\ip picorv\impl\pnr\ip picorv.rpt.txt" completed
+Sat May 10 17:35:20 2025
+

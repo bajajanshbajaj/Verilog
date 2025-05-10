@@ -81,7 +81,7 @@
  "TopModule" : "",
  "USERCODE" : "default",
  "Unused_Pin" : "As_input_tri_stated_with_pull_up",
- "VCC" : "1.0",
+ "VCC" : "1.2",
  "VCCAUX" : "3.3",
  "VCCX" : "3.3",
  "VHDL_Standard" : "VHDL_Std_1993",
