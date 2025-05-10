@@ -4,6 +4,10 @@
   {
    "Path" : "D:/Verilog/tang/uart/src/uart.v",
    "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Verilog/tang/uart/src/top.v",
+   "Type" : "verilog"
   }
  ],
  "IncludePath" : [
