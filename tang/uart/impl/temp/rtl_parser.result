@@ -1,10 +1,20 @@
 [
  {
-  "InstFile" : "D:/Verilog/tang/uart/src/uart.v",
+  "InstFile" : "D:/Verilog/tang/uart/src/top.v",
   "InstLine" : 1,
-  "InstName" : "uart_tx",
-  "ModuleFile" : "D:/Verilog/tang/uart/src/uart.v",
+  "InstName" : "uart_tx_top",
+  "ModuleFile" : "D:/Verilog/tang/uart/src/top.v",
   "ModuleLine" : 1,
-  "ModuleName" : "uart_tx"
+  "ModuleName" : "uart_tx_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Verilog/tang/uart/src/top.v",
+    "InstLine" : 25,
+    "InstName" : "uart",
+    "ModuleFile" : "D:/Verilog/tang/uart/src/uart.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "uart_tx"
+   }
+  ]
  }
 ]

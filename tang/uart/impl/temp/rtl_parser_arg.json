@@ -2,11 +2,11 @@
  "Device" : "GW2AR-18C",
  "Files" : [
   {
-   "Path" : "D:/Verilog/tang/uart/src/uart.v",
+   "Path" : "D:/Verilog/tang/uart/src/top.v",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/Verilog/tang/uart/src/top.v",
+   "Path" : "D:/Verilog/tang/uart/src/uart.v",
    "Type" : "verilog"
   }
  ],

@@ -7,5 +7,7 @@
     <FileList>
         <File path="src/top.v" type="file.verilog" enable="1"/>
         <File path="src/uart.v" type="file.verilog" enable="1"/>
+        <File path="src/uart.cst" type="file.cst" enable="1"/>
+        <File path="src/uart.sdc" type="file.sdc" enable="1"/>
     </FileList>
 </Project>
