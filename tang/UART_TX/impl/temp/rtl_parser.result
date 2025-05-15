@@ -1,0 +1,20 @@
+[
+ {
+  "InstFile" : "D:/Verilog/tang/UART_TX/src/TOP.v",
+  "InstLine" : 1,
+  "InstName" : "UART_TX_Top",
+  "ModuleFile" : "D:/Verilog/tang/UART_TX/src/TOP.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "UART_TX_Top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Verilog/tang/UART_TX/src/TOP.v",
+    "InstLine" : 17,
+    "InstName" : "uart",
+    "ModuleFile" : "D:/Verilog/tang/UART_TX/src/UART_TX.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "UART_TX"
+   }
+  ]
+ }
+]

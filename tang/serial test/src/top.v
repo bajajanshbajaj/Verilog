@@ -17,7 +17,7 @@ module x (
     wire [9:0] datafull ;
     reg [3:0] countToTen = 4'b0;
 
-    assign datafull= {1'b0 , data, 1'b1};
+    assign datafull= {1'b1 , data, 1'b0};
 
 
 

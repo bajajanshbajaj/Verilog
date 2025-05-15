@@ -1,0 +1,36 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.11.01 Education (64-bit)"
+//Fri May 16 03:30:35 2025
+
+//Source file index table:
+//file0 "\D:/Verilog/tang/UART_TX/src/TOP.v"
+//file1 "\D:/Verilog/tang/UART_TX/src/UART_TX.v"
+`pragma protect begin_protected
+`pragma protect version="2.3"
+`pragma protect author="default"
+`pragma protect author_info="default"
+`pragma protect encrypt_agent="GOWIN"
+`pragma protect encrypt_agent_info="GOWIN Encrypt Version 2.3"
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=256)
+`pragma protect key_keyowner="GOWIN",key_keyname="GWK2023-09",key_method="rsa"
+`pragma protect key_block
+lXrfukW5LW+yxeacJTBq/riEJH+ldgffx2ZM+SkW/PMv3+UWM9/hSRkwrXaGs/IlMmbbxbStP+2v
+mUiP1M6vBgQYB/feaciO/4gWSfcrg/tOKav3MpfxjQNUBXjIc0MO7RKaUfZT9gTTYfuGdbgfK4ZB
+KoIal82BJkGaobeW0A9P2fLtOTJwLB2jVLV14cTykioNUAmy/zj58SwXRGYMlKL0a8rpZi2cjoBk
+Zb0lO+Y/wqXpe1gfG5FpbFA8xtY5UFCniBsfDwbGcZJShB1BJRjNaRNgAYq82j7f5jZUH5/B9qDY
+58M/nyZJsqOxFZ/79UMbTGqWEfQCevMSmB9hUw==
+
+`pragma protect encoding=(enctype="base64", line_length=76, bytes=320)
+`pragma protect data_keyowner="default-ip-vendor"
+`pragma protect data_keyname="default-ip-key"
+`pragma protect data_method="aes128-cfb"
+`pragma protect data_block
+SB6cERJiMHi1MNiFwqvAAQmrJkM0q7WWSTsjBRaLQi2kl+ihHhNI3P4s/DrVtRiXJ11Dv0wzGKQ5
+mSJpgYDJqc4bnN10gBshvzmeBHLvm4jxUzVpBEe2yJXXlGXZV1dKuwA9vBzK39XsyyPPvfva1InW
+JKWEeDzjEsS9SQYQPewsEMLXy5jgff68Q+QWWB8fiVV8/7DFi53Hg/D6Y3888qkBPHwTE9dKrPjz
+J7MjDv+j4gSR3aXvrbygCCNP6q/2F4Zv98GJJJsgzrGnQwl2xPnwLR3spAi22xZbCWANyYP9oxhs
+29ruNOFfBUeLfehu3VQYw9bgu+3wctjHJSyt7hgGYz2MnmhHqvqN4PYTfsjS5G1Cb19gPG6ghU3t
+B+yvd3BJO1YJnC0UghSZvlVpJP+zYylwDupsFnIX1aPP7XA=
+`pragma protect end_protected
