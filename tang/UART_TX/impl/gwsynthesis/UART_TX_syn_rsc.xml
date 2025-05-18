@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="UART_TX_Top"/>
+<Module name="top_UART_TX" Register="7" Alu="5" Lut="3" T_Register="31(7)" T_Alu="5(5)" T_Lut="28(3)">
+ <SubModule name="uart_tx_inst" Register="24" Lut="25" T_Register="24(24)" T_Lut="25(25)"/>
+</Module>

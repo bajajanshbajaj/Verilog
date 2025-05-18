@@ -1,21 +1,33 @@
-module UART_TX_Top (
-    input clk,
-    output tx
+module top_UART_TX (
+    input clk,          // 27 MHz clock input
+    output tx           // UART TX output
 );
 
-    parameter CLK_FREQ = 27000000;
-    parameter SEND_INTERVAL = CLK_FREQ;  // 1 second
+    reg [5:0] clk_count = 0;
+    reg load = 0;
 
-    UART_TX uart (
+    wire rst = 0;
+    wire send = 1;
+    wire [7:0] data = 8'h61; // ASCII 'a'
+
+    // Generate load signal: high for 1 cycle every 50 cycles
+    always @(posedge clk) begin
+        if (clk_count == 49) begin
+            clk_count <= 0;
+            load <= 1;
+        end else begin
+            clk_count <= clk_count + 1;
+            load <= 0;
+        end
+    end
+
+    UART_TX uart_tx_inst (
         .clk(clk),
-        .rst(0),
         .data(data),
+        .send(send),
         .load(load),
-        .send(1'b0),   // 'send' input is not used in the revised UART_TX; removed for simplicity
+        .rst(rst),
         .tx(tx)
     );
-
-
-    
 
 endmodule
