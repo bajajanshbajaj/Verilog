@@ -3,85 +3,47 @@ module top_module(
     input areset,    // Freshly brainwashed Lemmings walk left.
     input bump_left,
     input bump_right,
-    input ground,
+    input ground,ṭ
     input dig,
     output walk_left,
     output walk_right,
     output aaah,
     output digging ); 
-    
-    localparam LEFT = 0, LEFTFALL= 1, RIGHT = 2, RIGHTFALL = 3, LEFTDIG = 4, RIGHTDIG = 5, SPLAT =6;
-    
-    reg [2:0] state, nextstate ;
-    reg [4:0] splatter;
-    
+
+    int i;
+    parameter LEFT=0, RIGHT=1, FLEFT = 2, FRIGHT = 3, DIGR=4, DIGL = 5, DEATH = 6;
+    reg [2:0]state, next_state, olddir;
+
     always @(*) begin
         case(state)
-            LEFT: begin
-                if (!ground) 
-                    nextstate = LEFTFALL;
-                else if (dig)
-                    nextstate = LEFTDIG;
-                else if (bump_left)
-                    nextstate = RIGHT;
-                else
-                    nextstate = LEFT;
-            end
-            RIGHT:begin
-                if (!ground) 
-                    nextstate = RIGHTFALL;
-                else if (dig)
-                    nextstate = RIGHTDIG;
-                else if (bump_right)
-                    nextstate = LEFT;
-                else 
-                    nextstate = RIGHT;
-            end
-            LEFTFALL: begin
-                if(ground)
-                    nextstate = LEFT;
-                else 
-                    nextstate = LEFTFALL;
-            end
-            
-            RIGHTFALL: begin
-                if(ground)
-                    nextstate = RIGHT;
-                else 
-                    nextstate = RIGHTFALL;
-            end
-            
-            LEFTDIG:begin
-                if(ground)
-                    nextstate = LEFTDIG;
-                else 
-                    nextstate = LEFTFALL;
-            end
-            
-            RIGHTDIG:begin
-                if(ground)
-                    nextstate = RIGHTDIG;
-                else 
-                    nextstate = RIGHTFALL;
-            end
-            
-            SPLAT: begin
-                nextstate = SPLAT;
-            
+            LEFT: next_state = ground ? (dig ? DIGL : (bump_left ? RIGHT : LEFT) ): FLEFT;
+            RIGHT: next_state = ground ? (dig ? DIGR : (bump_right ? LEFT : RIGHT) ) : FRIGHT;
+            FLEFT: next_state = ground ? (i > 19 ? DEATH : LEFT) : state;
+            FRIGHT: next_state = ground ? (i > 19? DEATH : RIGHT): state;
+            DIGR: next_state = ground ? DIGR : FRIGHT;
+            DIGL: next_state = ground ? DIGL : FLEFT;
+            DEATH: next_state = DEATH;
         endcase
     end
-    always @(posedge clk or posedge areset) begin
-        if (areset)
-            state <= LEFT;
-        else
-            state <= nextstate;
+
+    always @ (posedge clk, posedge areset) begin
+        if(areset)
+            state = LEFT;
+        else if(state == FLEFT || state == FRIGHT)begin
+            i <= i+1;
+            state <= next_state;
+        end
+        else begin
+            state <= next_state;
+        	i <= 0;
+        end
+        
     end
-
-    assign walk_left  = (state == LEFT);
-    assign walk_right = (state == RIGHT);
-    assign aaah = (state == LEFTFALL)|(state ==RIGHTFALL);
-    assign digging = (state == LEFTDIG)|(state ==RIGHTDIG);
-
-endmodule	
+    
+    assign walk_left = state == LEFT;
+    assign walk_right = state == RIGHT;
+    assign aaah = state == FRIGHT || state == FLEFT;
+    assign digging = state == DIGR || state == DIGL;
 
 
+endmodule
