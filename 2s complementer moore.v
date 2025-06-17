@@ -4,6 +4,8 @@ module top_module (
     input x,
     output reg z
 ); 
+
+//not real moore , change later , in moore , the output doesnt depend on input, only in state, seperate this into always @*
     reg state ;
     localparam zero= 0, one =1;
     
